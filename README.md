@@ -9,6 +9,8 @@ Multi SPA + Dynamic route.
 
 访问 `http://localhost:3000/event-template`
 
+另一个页面访问 `http://localhost:3000/event-example`
+
 ## 开始
 
 每个（期）活动可以是一个单独的SPA。如果有新一期的活动，可按以下步骤
@@ -28,3 +30,10 @@ Multi SPA + Dynamic route.
 
 ## 请勿删除 event-template 目录
 
+## 效果预览
+
+![img](./public/assets/home.png)
+
+## bundle预览
+
+![img](./public/assets/ana.png)

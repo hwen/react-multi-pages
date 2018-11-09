@@ -19,11 +19,11 @@ class App extends Component {
         <div>
           <Switch>
             {/* prettier-ignore */}
-            <Route exact path='/' component={async(import(/* webpackChunkName: "home" */ './pages/Home'))}></Route>
+            <Route exact path='/' component={async(import(/* webpackChunkName: "TemplateHome" */ './pages/Home'))}></Route>
             {/* prettier-ignore */}
-            <Route path="/about" component={async(import(/* webpackChunkName: "about" */ './pages/About'))} />
+            <Route path="/about" component={async(import(/* webpackChunkName: "TemplateAbout" */ './pages/About'))} />
             {/* prettier-ignore */}
-            <Route path="/count" component={async(import(/* webpackChunkName: "count" */ './pages/Count'))} />
+            <Route path="/count" component={async(import(/* webpackChunkName: "TemplateCount" */ './pages/Count'))} />
             <Redirect to="/" />
           </Switch>
         </div>

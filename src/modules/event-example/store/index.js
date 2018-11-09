@@ -1,5 +1,3 @@
-import { yiyan } from './../api/other';
-
 export const count = {
   state: 0,
   reducers: {
@@ -11,20 +9,6 @@ export const count = {
         setTimeout(resolve, 1000);
       });
       dispatch.count.increment();
-    },
-  }),
-};
-
-// 一言 rematch
-export const saying = {
-  state: {},
-  reducers: {
-    set: (state, payload) => (state = payload),
-  },
-  effects: dispatch => ({
-    async getYiyan() {
-      const resp = await yiyan();
-      dispatch.saying.set(resp);
     },
   }),
 };
